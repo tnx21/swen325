@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>What is your name?</h1>
+  <ion-list>
+    <ion-item>
+      <ion-label class="blue" fixed>Name:</ion-label>
+      <ion-input class="bold" [(ngModel)]="name"></ion-input>
+    </ion-item>
+    <button ion-button (click)="enterBtn(name)">Enter</button>
+  </ion-list>
+</ion-content>
